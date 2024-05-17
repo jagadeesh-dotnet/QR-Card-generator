@@ -5,7 +5,7 @@ Downloading file as stream
 [Route("DownloadLargeZipFile")]
 public HttpResponseMessage DownloadLargeZipFile()
 {
-    ZipFile.CreateFromDirectory("..\\..\\TestData", "D:\\Working\\TestData.zip",CompressionLevel.Fastest,false);
+    ZipFile.CreateFromDirectory("..\\..\\TestData", "..\\..\\TestData.zip",CompressionLevel.Fastest,false);
     string filePath = "..\..\\\TestData.zip";
 
     //converting Pdf file into bytes array
